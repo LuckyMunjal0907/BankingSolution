@@ -1,0 +1,10 @@
+services:
+  bankingsolution:
+    image: ${DOCKER_REGISTRY-}bankingsolution
+    build:
+      context: .
+      dockerfile: BankingSolution/Dockerfile
+    ports:
+      -  "7000:8000"
+  
+    
